@@ -1,0 +1,233 @@
+@media only screen and (min-width:948px)
+{
+#gridArea
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+         " header header "
+        
+         "vaccine vaccine"
+        "form form"
+      
+        "sub sub"
+        "back back"
+        
+
+         " footer footer"
+;
+    gap:5px;
+    place-items: center;
+}
+
+#back
+{ 
+  
+  padding-left: 80px;
+  padding-top: 20px;
+  grid-area: back;
+}
+body
+
+{
+  opacity: 0.9;
+  
+}
+#vaccine
+{
+  grid-area: vaccine;
+  padding-bottom: 40px;
+  
+}
+
+#header
+{
+  grid-area: header;
+  padding-bottom: 40px;
+  background-color:slategrey;
+
+  padding: 20px 20px;
+}
+#foremail
+{
+  grid-area: email1;
+  padding-left: 56px;
+  padding-top: 20px;
+}
+#form
+{
+  grid-area:form;
+}
+#fordate
+{
+  grid-area: date1;
+  padding-left: 60px;
+
+}
+#fortime
+{
+  grid-area: time1;
+  padding-left: 60px;
+  padding-top: 20px;
+}
+#forOHIP
+{
+  grid-area: OHIP;
+  padding-left: 56px;
+  padding-top: 20px;
+}
+
+
+#sub
+{
+  padding-left: 150px;
+  padding-top: 20px;
+}
+#submit
+{
+  grid-area: submit;
+  place-items: center;
+
+ 
+
+}
+
+#forphone
+{
+  grid-area: phone;
+  padding-left: 2px;
+  padding-top: 20px;
+}
+#footer
+{ color: white;
+  grid-area: footer;
+  margin-top: 600px;
+ background-color: black;
+  position: fixed;
+
+padding-left: 730px;
+padding-right: 730px;
+
+}
+}
+@media only screen and (max-width:376px)
+{
+
+
+
+  #gridArea
+  {
+      display:grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: 
+           " header"
+          
+           "vaccine"
+          "form"
+        
+          "sub"
+          "back"
+          
+  
+          
+  ;
+      gap:2px;
+      place-items: center;
+  }
+  #back
+  { 
+    
+    padding-left: 80px;
+    padding-top: 10px;
+    grid-area: back;
+  }
+  body
+  
+  {
+    opacity: 0.9;
+    margin: -8px -8px -8px -8px;
+  }
+  #vaccine
+  {
+    grid-area: vaccine;
+    padding-bottom: 10px;
+    
+  }
+  #header
+  {
+    grid-area: header;
+    padding-left: 60px;
+   
+    background-color:slategrey;
+  
+   
+    
+  }
+  #foremail
+  {
+    grid-area: email1;
+    padding-left: 56px;
+    padding-top: 20px;
+  }
+  #form
+  {
+    grid-area:form;
+    padding-top: -20px;
+  }
+  #fordate
+  {
+    grid-area: date1;
+    padding-left: 60px;
+  
+  }
+  #fortime
+  {
+    grid-area: time1;
+    padding-left: 60px;
+    padding-top: 20px;
+  }
+  #forOHIP
+  {
+    grid-area: OHIP;
+    padding-left: 56px;
+    padding-top: 20px;
+  }
+  
+  
+  #sub
+  {
+    padding-left: 150px;
+    padding-top: 20px;
+  }
+  #submit
+  {
+    grid-area: submit;
+    place-items: center;
+  
+   
+  
+  }
+  #forphone
+  {
+    grid-area: phone;
+    padding-left: 2px;
+    padding-top: 20px;
+  }
+  #footer
+  { 
+    color: white;
+    grid-area: footer;
+    background-color: black;
+  
+  padding-left: 180px;
+  padding-right: 150px;
+  margin-top: 550px;
+  
+  position: fixed;
+ 
+  
+  }
+
+}

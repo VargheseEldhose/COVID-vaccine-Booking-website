@@ -1,0 +1,135 @@
+@media only screen and (min-width:948px)
+{
+#gridArea
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+         " header header "
+        "book book"
+        " ul ul "
+        
+        "button1 button1"
+        "clear clear"
+       
+         
+         " footer footer"
+;
+    gap:5px;
+    place-items: center;
+}
+#vacc_Book
+{
+  grid-area: book;
+  color: white;
+}
+#clear
+{
+  grid-area: clear;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+body
+{
+  opacity: 0.8;
+  height:1500px;
+}
+#ul
+{
+  color: white;
+  grid-area:ul;
+}
+#header
+{
+  grid-area: header;
+  padding-bottom: 40px;
+  color: white;
+}
+#button1
+{
+  grid-area:button1;
+  padding-left:680px;
+  margin-bottom: 10px;
+
+
+}
+#footer
+{ padding-left: 710px;
+  padding-right: 710px;
+  grid-area: footer;
+  margin-top: 620px;
+  background-color: black;
+  color: white;
+  position: fixed;
+
+}
+}
+@media only screen and (max-width:376px)
+{
+
+  #gridArea
+  {
+      display:grid;
+      grid-template-columns: 5fr ;
+      grid-template-rows: auto;
+      grid-template-areas: 
+           " header  "
+          "book "
+          " ul  "
+          "button1"
+         
+         
+         
+         
+           
+          
+  ;
+      gap:1px;
+      place-items: center;
+  }
+  #vacc_Book
+  {
+    grid-area: book;
+    color: white;
+  }
+  body
+  {height:1500px;
+    opacity: 0.8;
+  }
+  #clear
+  {
+    margin-top: 10px;
+  }
+  #ul
+  {
+    color: white;
+    grid-area:ul;
+    padding-top: -50px;
+  }
+  #back
+  {
+    grid-area:button1;
+   
+  }
+  #header
+  {
+    grid-area: header;
+   padding-left: 40px;
+    color: white;
+    background-color: grey;
+  }
+  
+  #footer
+  { padding-left: 150px;
+    padding-right: 150px;
+    grid-area: footer;
+    position:fixed;
+    margin-top: 520px;
+    
+   
+    background-color: black;
+    color: white;
+  
+  }
+}

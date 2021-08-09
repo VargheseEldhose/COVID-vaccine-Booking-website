@@ -1,0 +1,175 @@
+@media only screen and (min-width:948px)
+{
+  
+ 
+
+#gridArea
+{
+    display:grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 150px 350px 83px 150px;
+    grid-template-areas: 
+         " header header   "
+         " navigationBar1   navigationBar2 "
+        ". ."
+        
+         " footer footer"
+;
+    gap:2px;
+    place-items: center;
+    
+}
+
+
+#header
+{
+  grid-area: header;
+  padding-bottom: 40px;
+  padding: 20px 20px;
+  background-color:slategrey;
+  
+}
+#navigationBar1{
+    grid-area: navigationBar1;
+    background-color: springgreen;
+    padding: 2px 20px 2px 20px;
+    
+}        
+ body { 
+           
+              opacity: 0.7;
+            }
+
+   
+#navigationBar2{
+    grid-area: navigationBar2;
+    background-color: springgreen;
+    padding: 2px 20px 2px 20px;
+    
+
+
+}
+
+footer
+{ 
+  grid-area: footer;
+ padding-bottom: -20px;
+    background-color:black;
+  padding-left: 725px;
+  padding-right: 725px;
+  padding-bottom:20px;
+  
+  color: white;
+  
+  
+
+}
+#name
+{
+  grid-area: name;
+}
+#campus
+{
+  grid-area: campus;
+}
+#date
+{
+  grid-area: date;
+}
+
+}
+
+@media only screen and (max-width:376px)
+{
+  #gridArea
+  {
+      display:grid;
+      grid-template-columns: 1fr ;
+      grid-template-rows: 170px 150px 130px 10px 100px;
+      grid-template-areas: 
+           "  header"
+           " navigationBar1"
+           " navigationBar2"
+           " ."
+
+          
+           " footer"
+  ;
+     
+      place-items: center;
+      
+  }
+
+  
+ #header
+  {
+    grid-area: header;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    margin-right: -30px;
+    margin-left:-30px;  
+  width: 300px;
+    padding-left: 20px;
+
+
+  
+    background-color:slategrey;
+    
+  }
+  #navigationBar1{
+     margin-top:50px;
+      background-color: rgb(71, 156, 114);
+      padding: 2px 20px 2px 20px;
+      
+  }        
+   body {
+           
+             
+                opacity: 0.8;
+              }
+              
+  
+     
+  #navigationBar2{
+     
+      background-color: rgb(56, 146, 101);
+      padding: 2px 40px 2px 20px;
+      
+  
+  
+  }
+  
+  footer
+  { 
+    grid-area: footer;
+    margin-top: 205px;
+      background-color:black;
+   
+   
+    padding-left: 178px;
+    padding-right: 100px;
+    
+    
+    color: white;
+    
+    
+  
+  }
+  #name
+  {
+    grid-area: name;
+  }
+  #campus
+  {
+    grid-area: campus;
+  }
+  #date
+  {
+    grid-area: date;
+  }
+  
+  
+  
+
+  
+}
